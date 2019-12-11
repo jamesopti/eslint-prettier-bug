@@ -3,11 +3,11 @@ import React from "react";
 function App() {
   return (
     <div
-      className="flex"
-      activator={ (
+      className={ {display: 'flex'} }
+      otherProp={ (
         <div>
           my really long divvvvvvvvvvvvvvvvvvvv
-          <span>some child</span>
+          <button>some child</button>
         </div>
       ) }>
       My app

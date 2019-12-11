@@ -5,7 +5,6 @@ module.exports = {
   },
   extends: [
     'plugin:react/recommended',
-    'airbnb',
     'plugin:prettier/recommended'
   ],
   globals: {
@@ -25,7 +24,8 @@ module.exports = {
     'prettier'
   ],
   rules: {
-    'react/jsx-filename-extension': ['warn', { extensions: ['.js'] }], // changed to warn and change to allow .js to contain JSX syntax
+    'react/jsx-curly-spacing': ['error', 'always', { allowMultiline: true }], // OK
+    'react/jsx-curly-spacing': ['error', 'never', { allowMultiline: true }], // ERROR
     'prettier/prettier': 'error'
   },
 };
