@@ -4,12 +4,12 @@ function App() {
   return (
     <div
       className="flex"
-      activator={(
+      activator={ (
         <div>
           my really long divvvvvvvvvvvvvvvvvvvv
+          <span>some child</span>
         </div>
-    
-    >
+      ) }>
       My app
     </div>
   );
